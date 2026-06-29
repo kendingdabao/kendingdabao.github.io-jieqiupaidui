@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -30,14 +31,10 @@
         </div>
 
         <div class="reward-box">
-            <div class="reward-title">🎁 限時獎勵</div>
+            <div class="reward-title">🏆 派對獎勵</div>
             <ul>
-                <li class="reward-section">💎 派對貴賓 - 終身回饋</li>
-                <li>💎 每日可獲得 100 鑽石</li>
-                <li>🎧 專屬頭像 (永久)</li>
-                <li>⚡ 王朝模式連續配對場次 +5</li>
-                <li>🔥 5對5全場爭霸連續配對場次 +5</li>
-                <li>💎 立即獲得 x980 鑽石</li>
+                <li>🔥 球衣隨機抽取獲得 x1</li>
+                <li>📦 巨星珍藏自選箱 x1</li>
             </ul>
         </div>
 
@@ -47,7 +44,6 @@
     </div>
 
     <script>
-        // 倒數計時 - 7/10 23:59 截止
         const endTime = new Date('2026-07-10T23:59:59').getTime();
         
         function updateCountdown() {
@@ -71,7 +67,6 @@
         setInterval(updateCountdown, 1000);
         updateCountdown();
 
-        // 按鈕波紋，不阻擋跳轉
         document.getElementById('applyBtn').addEventListener('click', function(e) {
             const btn = e.currentTarget;
             const ripple = document.createElement('span');
