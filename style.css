@@ -27,7 +27,7 @@ html {
     --glass: rgba(0, 30, 60, .85);
     --glass-light: rgba(255, 255, 255, .1);
     --border: rgba(0, 198, 255, .2);
-    --yellow: #ff6b00; /* 街頭橘 */
+    --yellow: #ff6b00;
     --yellow-dark: #ff4500;
     --cyan: #00f5ff;
     --white: #ffffff;
@@ -272,6 +272,13 @@ Reward Box
 }
 
 .reward-box ul { list-style: none; }
+
+.reward-box li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+    font-size: 17px;
+    color: #ffffff;
+}
 
 .reward-box li.reward-section {
     padding: 14px 12px 10px;
