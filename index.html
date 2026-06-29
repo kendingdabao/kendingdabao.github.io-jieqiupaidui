@@ -1,3 +1,4 @@
+月遊戲排行
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -22,38 +23,48 @@
         </div>
 
         <h1>全明星 <span>街球派對</span></h1>
-        <p class="subtitle">立即報名，挑戰街頭傳奇稱號</p>
+        <p class="subtitle">立即報名，領取限時好禮</p>
 
         <div class="countdown-box">
-            <div class="count-title">報名截止倒數</div>
-            <div id="countdown">3天 00:00:00</div>
+            <div class="count-title">活動時間：6/29 - 7/10 23:59</div>
+            <div id="countdown">10天 00:00:00</div>
         </div>
 
         <div class="reward-box">
-            <div class="reward-title">🏆 派對獎勵</div>
+            <div class="reward-title">🎁 限時獎勵</div>
             <ul>
-                <li>🔥 限定球衣 x1</li>
-                <li>💎 鑽石 x2000</li>
-                <li>🎧 傳奇 DJ 球鞋 x1</li>
-                <li>⭐ 街球之王頭像框</li>
+                <li class="reward-section">🎁 開啟禮包可隨機獲得以下獎勵中的一個</li>
+                <li>🏀 愛德華茲 25-26 專屬球衣</li>
+                <li>🏀 文班亞馬 24-25 專屬球衣</li>
+                <li>🏀 亞歷山大 24-25 專屬球衣</li>
+                <li>🎒 保羅蓋索 09-10 專屬球衣包</li>
+                <li>🏀 揚尼斯 19-20 專屬球衣</li>
+                <li>📦 巨星珍藏自選箱</li>
+                
+                <li class="reward-section" style="margin-top: 16px;">💎 派對貴賓 - 終身回饋</li>
+                <li>💎 每日可獲得 100 鑽石</li>
+                <li>🎧 專屬頭像 (永久)</li>
+                <li>⚡ 王朝模式連續配對場次 +5</li>
+                <li>🔥 5對5全場爭霸連續配對場次 +5</li>
+                <li>💎 立即獲得 x980 鑽石</li>
             </ul>
         </div>
 
         <a href="#" class="join-btn" id="applyBtn">立即申請入場</a>
 
-        <p class="notice">*每帳號限申請一次，審核通過後發放獎勵</p>
+        <p class="notice">*每帳號限申請一次，活動獎勵以遊戲內實際發放為主</p>
     </div>
 
     <script>
-        // 倒數計時 - 設3天後
-        const endTime = new Date().getTime() + 3 * 24 * 60 * 60 * 1000;
+        // 倒數計時 - 7/10 23:59 截止
+        const endTime = new Date('2026-07-10T23:59:59').getTime();
         
         function updateCountdown() {
             const now = new Date().getTime();
             const diff = endTime - now;
             
             if (diff <= 0) {
-                document.getElementById('countdown').innerHTML = "報名已截止";
+                document.getElementById('countdown').innerHTML = "活動已結束";
                 return;
             }
             
@@ -87,7 +98,7 @@
             btn.appendChild(ripple);
             setTimeout(() => ripple.remove(), 700);
             
-            alert('申請已送出！請等待審核');
+            alert('申請已送出！請至遊戲內查收獎勵');
         });
     </script>
 </body>
