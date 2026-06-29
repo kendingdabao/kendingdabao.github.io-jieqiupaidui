@@ -273,11 +273,25 @@ Reward Box
 
 .reward-box ul { list-style: none; }
 
-.reward-box li {
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, .08);
-    font-size: 17px;
-    color: #ffffff;
+.reward-box li.reward-section {
+    padding: 14px 12px 10px;
+    margin: 16px -12px 8px;
+    border-bottom: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, 
+        rgba(0, 198, 255, .15) 0%, 
+        rgba(255, 107, 0, .15) 100%);
+    border-left: 3px solid var(--cyan);
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--cyan);
+    text-shadow: 0 0 10px rgba(0, 245, 255, .5);
+    letter-spacing: .5px;
+}
+
+.reward-box li.reward-section:first-child {
+    margin-top: 0;
+    padding-top: 14px;
 }
 
 .reward-box li:last-child { border-bottom: none; }
