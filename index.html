@@ -41,7 +41,7 @@
             </ul>
         </div>
 
-        <a href="#" class="join-btn" id="applyBtn">立即申請領取</a>
+        <a href="https://lin.ee/xEkSvR9H" class="join-btn" id="applyBtn" target="_blank">立即申請領取</a>
 
         <p class="notice">*每個玩家限申請一次</p>
     </div>
@@ -71,9 +71,8 @@
         setInterval(updateCountdown, 1000);
         updateCountdown();
 
-        // 按鈕波紋
+        // 按鈕波紋，不阻擋跳轉
         document.getElementById('applyBtn').addEventListener('click', function(e) {
-            e.preventDefault();
             const btn = e.currentTarget;
             const ripple = document.createElement('span');
             const rect = btn.getBoundingClientRect();
@@ -88,8 +87,6 @@
             
             btn.appendChild(ripple);
             setTimeout(() => ripple.remove(), 700);
-            
-            alert('申請已送出！請至遊戲內查收獎勵');
         });
     </script>
 </body>
